@@ -6,8 +6,56 @@
         <title>Tables Page</title>
     </head>
     <body>
-        <form action="">
+        <form action="forms.php" method="post" enctype="multipart/form-data">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="SpongeBob" minlength="6" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" minlength="6" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="example@mail.com" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+            <label for="bday">Birth Date:</label>
+            <input type="date" id="bday"  required>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1" required>
+            <br>
+            <label for="title">Title:</label>
+
+            <label for="mr">Mr.</label>
+            <input type="radio" id="mr" name="title" value="mr">
             
+            <label for="mrs">Mrs.</label>
+            <input type="radio" id="mrs" name="title" value="mrs">
+
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="title" value="other">
+            <br>
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option value="visa">VISA</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="gift">GiftCard</option>
+            </select>
+            <br>
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe" checked>
+            <br>
+            <label id="comlabel" for="comment">Comments:</label>
+            <textarea id="comment" rows="3" cols="25" placeholder="Type your comments here." style="vertical-align: top;"></textarea>
+            <br>
+            <label for="file">File</label>
+            <input type="file" id="file" accept="image/*">
+            <br>
+            <input type="reset">
+            <br>
+            <input type="submit">
         </form>
     </body>
 </html>
