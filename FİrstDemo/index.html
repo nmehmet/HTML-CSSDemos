@@ -35,6 +35,12 @@
         <a href="lists.html" target="_blank" title="Go to list Page">To List Page</a>
         <br>
         <a href="tables.html" target="_blank" title="Go to Tavles page">Tables Page</a>
+        <br>
+        
+        <button onclick="gotoPage('buttons.html')" style="font-size: 15px; background-color: grey; color: lightblue;border-radius: 25px;" title="Go to Buttons page">Buttons Page</button>
+        
+        <button onclick="gotoPage('forms.html')" style="font-size: 15px; background-color: grey; color: lightblue;border-radius: 25px;" title="Go to Forms">Forms Page</button>
+        
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <pre>Lorem ipsum dolor sit amet,
@@ -44,4 +50,10 @@
         <!-- Comment Block -->
         
     </body>
+    <script>
+        function gotoPage(pageURL)
+        {
+            window.open(pageURL, "_blank");
+        }
+    </script>
 </html>

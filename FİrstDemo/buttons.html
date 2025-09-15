@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="https://www.google.com" target="_blank" title="Go to Google in a new tab">
+            <button style="font-size: 25px; background-color: grey; color: lightblue;border-radius: 25px;">To Google</button>
+        </a>
+        
+        <button onclick="doSomething()" title="Does Something" style="font-size: 25px; background-color: grey; color: lightblue;border-radius: 25px;">Do Something</button>
+
+        <p id="greeting">Hello</p>
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML = "goodbye"; 
+            }
+        </script>
+    </body>
+</html>
